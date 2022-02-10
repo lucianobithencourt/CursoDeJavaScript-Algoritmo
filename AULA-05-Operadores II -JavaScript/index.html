@@ -10,170 +10,96 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Tratamento de Dados</title>
+    <title>Operadores II</title>
 </head>
 
 <body>
 
-    <h1>Operadores</h1>
+    <h1>Operadores </h1>
 
-    <h2>Operadores-Aritmeticos</h2>
+    <h2>Operadores-Relacionais</h2>
 
-    <h2>Operadores-Aritmeticos</h2>
-
-    <ul type="circle">
-        <p>Operadores aritméticos JavaScript</p>
-        <li>
-            <li>+ Adição</li>
-            <li>- Subtração</li>
-            <li>* Multiplicação</li>
-            <li>/ Divisão</li>
-            <li>% Módulo</li>
-            <li>++ Incremento</li>
-            <li>-- diminuição</li>
-
-    </ul>
-
-    <p> <strong>Obs:</strong> Precedência na matemática, da maior pra menor: Parênteses; Expoentes; Multiplicações e divisões; (da esquerda para a direita); Somas e subtrações. (da esquerda para a direita); Grande parte das linguagens de programação seguem
-        (sempre que possível) as convenções matemáticas comuns para associatividade e precedência. Na maioria das linguagens de programação os operadores de atribuição são definidos com associatividade à direita. Ou seja, a = b = c é o equivalente a a
-        = (b = c), que alimenta as variáveis a e b com o valor armazenado em c. As linguagens de programação possuem em suas documentações uma tabela dos operadores e suas precedências, da maior pra menor, bem como a associatividade desses operadores.
-        Portanto, a regra aqui é avaliar essa tabela na linguagem que você utiliza.
-
-    </p>
-
-    <figure><img src="img/precedencia.PNG" alt="" width="250">
-        <figcaption>Ordem de Precedencia</figcaption>
-    </figure>
-    <hr>
-
-    <pre>
-    <code>
-        let a = 5 + 3
-        console.log(a);
-
-        let b = a % 5
-        console.log(b);
-
-        let c = 5 * b**2
-        console.log(c);
-
-        let d = 10-a/2
-        console.log(d);
-
-        let e = 6 * 2 / d
-        console.log(e);
-
-        let f = b%e + 4/e
-        console.log(f);
-    </code>
-</pre>
-    <hr>
-
-    <h2>Operadores de Atribuição de JavaScript</h2>
+    
 
     <table>
 
         <thead>
             <tr>
-                <th>operador</th>
-                <th>exemplo</th>
-                <th>igual a</th>
+                <th>Operador</th>
+                <th>Operação</th>
+                <th>Exemplo</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>=</td>
-                <td>x=y</td>
-                <td>x=y</td>
+                <td>&gt;</td>
+                <td>maior</td>
+                <td>a &gt; b</td>
+                
             </tr>
             <tr>
-                <td>+=</td>
-                <td>x += y</td>
-                <td>x = x + y</td>
+                <td>&lt;</td>
+                <td>menor</td>
+                <td>a &lt; b</td>
             </tr>
             <tr>
-                <td>-=</td>
-                <td>x -= y</td>
-                <td>x = x - y</td>
+                <td>&gt;= </td>
+                <td>maior igual que </td>
+                <td>a &gt;= b</td>
             </tr>
             <tr>
-                <td>*=</td>
-                <td>x *= y</td>
-                <td>x = x * y</td>
+                <td>&lt;= </td>
+                <td>menor igual que </td>
+                <td>a &lt;= b</td>
             </tr>
             <tr>
-                <td>/=</td>
-                <td>x /= y</td>
-                <td>x = x / y</td>
+                <td>==</td>
+                <td>igual</td>
+                <td> a == b </td>
             </tr>
             <tr>
-                <td>%=</td>
-                <td>x %= y</td>
-                <td>x = x % y</td>
+                <td>!=</td>
+                <td>diferente</td>
+                <td> a != b</td>
+            </tr>
+            <tr>
+                <td>===</td>
+                <td>identico</td>
+                <td> a === b</td>
             </tr>
         </tbody>
     </table>
+    <hr>
+
+    <pre>
+        <code>
+            let a = 3
+            let b = 6
+
+            let maior = (a > b)
+            console.log(maior);
+            false
+            let menor = (a < b)
+            console.log(menor);
+            true
+            let maiorigual = (a >= b)
+            console.log(maiorigual);
+            false
+            let menorigual = (a <= b)
+            console.log(menorigual);
+            true
+            let igual = (a == b)
+            console.log(igual);
+            false
+            let diferente = (a != b)
+            console.log(diferente);
+            true
+        </code>
+    </pre>
 <hr>
- <h1>Auto-Atribuição</h1>
-<pre>
-    <code>
-        let n = 3
-        n = n += 4
-        console.log(n);
-           = 7
-        n = n-=5 
-        console.log(n);
-           = 2
-        n = n*=4
-        console.log(n)
-           = 8
-        n = n/=2
-        console.log(n)
-           = 4
-        n = n**=2
-        console.log(n)
-           = 16
-        n = n%=5
-        console.log(n)
-           1
-    </code>
-</pre>
-<hr>
-<h1>Incremento & Decremento</h1>
-         
- <pre>
-     <code>
-        // incremento 
-
-        let x1 = 5
-        x1++
-        console.log(x1);
-       
-       // pre-incremento 
-       let x2 = 5
-        ++x2
-        console.log(x2);
-       
-       //  decremento 
-       let y1 = 10 
-       y1--
-       console.log(y1);
-       
-       
-       //  pré-decremento 
-       let y2 = 10 
-       --y2
-       console.log(y2);
-     </code>
- </pre>
-
-
-
-
-
-
-    <script src="js/operadores-javascript.js"></script>
+ 
+    <script src="js/operadoresII-javascript.js"></script>
 </body>
 
 </html>

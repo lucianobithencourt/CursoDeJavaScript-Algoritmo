@@ -19,7 +19,7 @@ text-align: justify;
 }
 
 table,td,th,tr {
-
+    text-align: center;
     border: 2px solid blue;
 }
 td, th , tr {
