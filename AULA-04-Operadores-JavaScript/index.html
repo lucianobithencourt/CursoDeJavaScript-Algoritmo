@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,91 +12,115 @@
 
     <title>Tratamento de Dados</title>
 </head>
+
 <body>
 
-<h1>Operadores</h1>
+    <h1>Operadores</h1>
 
-<h2>Operadores-Aritmeticos</h2>
+    <h2>Operadores-Aritmeticos</h2>
 
-<h2>Operadores-Aritmeticos</h2>
+    <h2>Operadores-Aritmeticos</h2>
 
-<ul type="circle" ><p>Operadores aritméticos JavaScript</p>
-    <li>
-    <li>+	Adição</li>
-    <li>-	Subtração</li>
-    <li>*	Multiplicação</li>
-    <li>/	Divisão</li>
-    <li>%	Módulo</li>
-    <li>++	Incremento</li>
-    <li>--	diminuição</li>
-    
-</ul>
-<img src="../img/precedencia.PNG" alt="" width="250">
-<p> <strong>Obs:</strong> Precedência na matemática, da maior pra menor:
+    <ul type="circle">
+        <p>Operadores aritméticos JavaScript</p>
+        <li>
+            <li>+ Adição</li>
+            <li>- Subtração</li>
+            <li>* Multiplicação</li>
+            <li>/ Divisão</li>
+            <li>% Módulo</li>
+            <li>++ Incremento</li>
+            <li>-- diminuição</li>
 
-    
-    Parênteses;
-    Expoentes;
-    Multiplicações e divisões; (da esquerda para a direita);
-    Somas e subtrações. (da esquerda para a direita);
-    Grande parte das linguagens de programação seguem (sempre que possível) as convenções matemáticas comuns para associatividade e precedência.
-    
-    Na maioria das linguagens de programação os operadores de atribuição são definidos com associatividade à direita. Ou seja, a = b = c é o equivalente a a = (b = c), que alimenta as variáveis a e b com o valor armazenado em c. As linguagens de programação possuem em suas documentações uma tabela dos operadores e suas precedências, da maior pra menor, bem como a associatividade desses operadores. Portanto, a regra aqui é avaliar essa tabela na linguagem que você utiliza.
+    </ul>
 
-</p>
-<hr>
+    <p> <strong>Obs:</strong> Precedência na matemática, da maior pra menor: Parênteses; Expoentes; Multiplicações e divisões; (da esquerda para a direita); Somas e subtrações. (da esquerda para a direita); Grande parte das linguagens de programação seguem
+        (sempre que possível) as convenções matemáticas comuns para associatividade e precedência. Na maioria das linguagens de programação os operadores de atribuição são definidos com associatividade à direita. Ou seja, a = b = c é o equivalente a a
+        = (b = c), que alimenta as variáveis a e b com o valor armazenado em c. As linguagens de programação possuem em suas documentações uma tabela dos operadores e suas precedências, da maior pra menor, bem como a associatividade desses operadores.
+        Portanto, a regra aqui é avaliar essa tabela na linguagem que você utiliza.
 
-<h2>Operadores de Atribuição de JavaScript</h2>
+    </p>
 
-<table>
+    <figure><img src="img/precedencia.PNG" alt="" width="250">
+        <figcaption>Ordem de Precedencia</figcaption>
+    </figure>
+    <hr>
 
-    <thead>
-        <tr>
-            <th>operador</th>
-            <th>exemplo</th>
-            <th>igual a</th>
-        </tr>
-    </thead>
+    <pre>
+    <code>
+        let a = 5 + 3
+        console.log(a);
 
-    <tbody>
-        <tr>
-            <td>=</td>
-            <td>x=y</td>
-            <td>x=y</td>
-        </tr>
-        <tr>
-            <td>+=</td>
-            <td>x += y</td>
-            <td>x = x + y</td>
-        </tr>
-        <tr>
-            <td>-=</td>
-            <td>x -= y</td>
-            <td>x = x - y</td>
-        </tr>
-        <tr>
-            <td>*=</td>
-            <td>x *= y</td>
-            <td>x = x * y</td>
-        </tr>
-        <tr>
-            <td>/=</td>
-            <td>x /= y</td>
-            <td>x = x / y</td>
-        </tr>
-        <tr>
-            <td>%=</td>
-            <td>x %= y</td>
-            <td>x = x % y</td>
-        </tr>
-    </tbody>
-</table>
+        let b = a % 5
+        console.log(b);
+
+        let c = 5 * b**2
+        console.log(c);
+
+        let d = 10-a/2
+        console.log(d);
+
+        let e = 6 * 2 / d
+        console.log(e);
+
+        let f = b%e + 4/e
+        console.log(f);
+    </code>
+</pre>
+    <hr>
+
+    <h2>Operadores de Atribuição de JavaScript</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>operador</th>
+                <th>exemplo</th>
+                <th>igual a</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>=</td>
+                <td>x=y</td>
+                <td>x=y</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>x += y</td>
+                <td>x = x + y</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>x -= y</td>
+                <td>x = x - y</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>x *= y</td>
+                <td>x = x * y</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>x /= y</td>
+                <td>x = x / y</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>x %= y</td>
+                <td>x = x % y</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
-      
+
 
 
     <script src="js/operadores-javascript.js"></script>
 </body>
+
 </html>
