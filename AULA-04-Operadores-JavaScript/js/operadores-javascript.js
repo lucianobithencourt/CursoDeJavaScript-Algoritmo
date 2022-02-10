@@ -32,7 +32,7 @@ console.log(`Resultado da operação de adicao dos valores ${valorNum1} % ${valo
 let  exponenciacao = (valorNum1**valorNum2);
 console.log(`Resultado da operação de adicao dos valores ${valorNum1} ** ${valorNum2} =   ${exponenciacao}`);
 
-// precedencia 
+// PRECEDENCIA NA OPERAÇÃO ARITIMETICA
 
 let a = 5 + 3
 console.log(a);
@@ -46,3 +46,28 @@ let e = 6 * 2 / d
 console.log(e);
 let f = b%e + 4/e
 console.log(f);
+
+// AUTO-ATRIBUIÇÃO
+
+let n = 3
+
+// n = n += 4 
+// é o mesmo que n = 3 + 4
+
+n = n += 4
+console.log(n);
+
+n = n-=5 
+console.log(n);
+
+n = n*=4
+console.log(n)
+
+n = n/=2
+console.log(n)
+
+n = n**=2
+console.log(n)
+
+n = n%=5
+console.log(n)
