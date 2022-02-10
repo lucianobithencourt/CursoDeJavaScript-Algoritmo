@@ -15,4 +15,4 @@ media_idade = (45+32+35)/3
 
 document.write('a soma das idade é igual a ' + idade  + " anos de vida <br>")
 
-document.write('A média da idade dos adultos relacionados é de ' + media_idade.toFixed(2) + 'anos'  )
+document.write('A média da idade dos adultos relacionados é de ' + Math.round(media_idade) + 'anos'  )
