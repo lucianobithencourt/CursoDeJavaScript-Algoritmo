@@ -1,160 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Eventos-DOM</title>
+  </head>
 
-    <title>DOM - Document Object Modle</title>
-</head>
+  <body>
 
-<body>
+    <h1><a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=842:lista-de-eventos-javascript-on-click-dblclick-mouseover-mouseout-change-submit-keypress-cu01159e&catid=78&Itemid=206" title="Lista de Eventos com mouse">Eventos com mouse - DOM</a></h1>
+    <h3 class="umclique" onclick="umclique()">Evento - onclick</h3>
+    <p>
+      <strong>onclick</strong> -
+      <em>
+        Produz-se quando se clica o botão do mouse sobre um elemento da página,
+        geralmente um botão ou um link. Javascript 1.0
+      </em>
+    </p>
+    <hr />
 
-    <h1>DOM - Document Object Modle</h1>
-    <img src="https://miro.medium.com/max/1400/1*mMmuOhNytgqP7lrU9HPTpw.jpeg" alt="organogram-arvoreDOM" width="950">
+    <h3 class="umclique" onmousedown="clicarsoltar()">Evento - onmousedown</h3>
+    <p>
+      <strong>onmousedown</strong> -
+      <em
+        >Produz-se o evento onmousedown quando o usuário clica sobre um elemento
+        da página. onmousedown se produz no momento de clicar o botão, soltando
+        ou não.</em
+      >
+      Javascript 1.2
+    </p>
 
+    <hr />
 
-    <h2> Exitem 5 formas de acesso elementos DOM</h2>
+    <h3 class="umclique" onmousemove="movermousa()">Evento - onmousemove</h3>
+    <p>
+      <strong>onmousemove</strong> -
+      <em
+        >Produz-se o evento quando o mouse se move pela página. Javascript
+        1.2</em
+      >
+      Javascript 1.2
+    </p>
 
-    <table>
+    <hr />
 
-        <tr>
-            <th>Seletores-DOM</th>
-            <td>seleção por </td>
-        </tr>
+    <h3 class="umclique" onselect="selecaomouse()">Evento - onselect</h3>
+    <p><strong>onselect</strong> -
+      <em>Executa-se quando um usuário realiza uma seleção de um elemento de um formulário.
+        Javascript 1.0</em>
+      Javascript 1.2
+    </p>
+   
+    <hr />
 
-        <tr>
-            <td>document.getElementById('')</td>
-            <td>id</td>
-        </tr>
-        <tr>
-            <td>document.getElementsByClassName('')</td>
-            <td>class</td>
-        </tr>
+    
 
-        <tr>
-            <td>document.getElementsByName('')</td>
-            <td>name</td>
-        </tr>
-        <tr>
-            <td>document.getElementsByTagName('')</td>
-            <td>tag</td>
-        </tr>
-        <td>document.querySelector('')</td>
-        <td>'#id 'ou'.class'</td>
-
-    </table>
-
-    <h3>Selecionado via tagname - getElementsByTagName('tag')[posição]</h3>
-
-    <pre>
-        <code>
-            let element = document.getElementsByTagName('p')[0]
-            element.innerText=''
-            element.style.color='red'
-            element.style.fontSize='2em'
-
-            let element2 = document.getElementsByTagName('p')[1]
-            element2.innerText='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-
-            element2.style.color='purple';
-        </code>
-    </pre>
-
-    <p>Acesso via tag name - document.getElementsByTagName('p')</p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi perspiciatis, fugiat dolorem maxime a sit modi amet suscipit repellat consequuntur perferendis id tenetur optio quo laboriosam quidem vel blanditiis!</p>
-
-    <hr>
-    <h3>Selecionado via id - document.getElementById('')</h3>
-
-    <p id="nome-id"> selecionado por id (nome-id) </p>
-    <pre>
-        <code>
-            let element = document.getElementById('nome-id');
-            element.innerHTML='Acessado via getElementById';
-        </code>
-    </pre>
-    <hr>
-    <h3>Selecionado via class - document.getElementsByClassName('nome-class')[posicao]</h3>
-
-
-    <div class="classe">
-<hr>
-        <p>Pegando elemento pela classe[0] </p>
-    </div>
-    <pre>
-    <code>
-        let element = document.getElementsByClassName('classe')[0]
-
-        element.innerText='Alterando elemento da  posição[0]....';
-        element.style.color='navy';
-        element.style.fontWeight='bold';
-
-    </code>
-</pre>
-<hr>
-    <div class="classe">
-        <p>Pegando elemento pela classe[1] </p>
-    </div>
- 
-    <pre>
-        <code>
-    let element2 = document.getElementsByClassName('classe')[1]
-
-    element2.innerText='Alterando elemento da  posição[1]....';
-    element2.style.color='purple';
-    element2.style.fontWeight='bold';
-        </code>
-    </pre>
-    <hr>
-    <div class="classe">
-        <p>Pegando elemento pela classe[2] </p>
-    </div>
-    <pre>
-        <code>
-        let element3 = document.getElementsByClassName('classe')[2]
-
-        element3.innerText='Alterando elemento da  posição[2]....';
-        element3.style.color='yellow';
-        element3.style.fontWeight='bold';
-        </code>
-    </pre>
- <hr>
- <h3>Selecionado via class - document.querySelector(#id-nome)</h3>
-
- <p id="query">Selecionando  com querySelector('id#query')</p>
- 
- <pre>
-     <code>
-        let element4 = document.querySelector('p#query')
-
-        element4.innerHTML="A seleção segue sintaxe que se usa no css # para id's e  \'.\' para class";
-        element4.style.color='blue';
-        element4.style.fontWeight='bold';
-     </code>
- </pre>
-
- <hr>
-
- <p class="class">Selecionando  com querySelector('p.class')</p>
-
- <pre>
-     <code>
-        let element5 = document.querySelector('p.class')
-        element5.innerHTML="A seleção segue sintaxe que se usa no css # para id's e  \'.\' para class";
-        element5.style.color='blue';
-        element5.style.fontWeight='bold';
-     </code>
- </pre>
-
-
-    <script src="js/dom.js"></script>
-</body>
-
+    <script src="js/dom-eventos.js"></script>
+  </body>
 </html>
