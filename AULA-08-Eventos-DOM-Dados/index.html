@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,58 +10,34 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Eventos-DOM</title>
-  </head>
+    <title>Eventos-DOM-Dados</title>
+</head>
 
-  <body>
+<body>
+    <form action="#" method="get">
 
-    <h1><a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=842:lista-de-eventos-javascript-on-click-dblclick-mouseover-mouseout-change-submit-keypress-cu01159e&catid=78&Itemid=206" title="Lista de Eventos com mouse">Eventos com mouse - DOM</a></h1>
-    <h3 class="umclique" onclick="umclique()">Evento - onclick</h3>
-    <p>
-      <strong>onclick</strong> -
-      <em>
-        Produz-se quando se clica o botão do mouse sobre um elemento da página,
-        geralmente um botão ou um link. Javascript 1.0
-      </em>
-    </p>
-    <hr />
+        <fieldset>
+            <legend>Calcular Valores</legend>
 
-    <h3 class="umclique" onmousedown="clicarsoltar()">Evento - onmousedown</h3>
-    <p>
-      <strong>onmousedown</strong> -
-      <em
-        >Produz-se o evento onmousedown quando o usuário clica sobre um elemento
-        da página. onmousedown se produz no momento de clicar o botão, soltando
-        ou não.</em
-      >
-      Javascript 1.2
-    </p>
+            <label for="">
+      Valor1 : <input type="number" name="" id="valor1" placeholder="Digite Valor"> <br>
+      
+      Valor2 : <input type="number" name="" id="valor2" placeholder="Digite Valor"> <br>
 
-    <hr />
+      <input type="button" value="Calcular"  onclick="calcular()" >
+      <input type="reset" value="Limpar Formulario">
 
-    <h3 class="umclique" onmousemove="movermousa()">Evento - onmousemove</h3>
-    <p>
-      <strong>onmousemove</strong> -
-      <em
-        >Produz-se o evento quando o mouse se move pela página. Javascript
-        1.2</em
-      >
-      Javascript 1.2
-    </p>
+    </label><br>
 
-    <hr />
+            <p id="resposta-calculo">calculo</p>
 
-    <h3 class="umclique" onselect="selecaomouse()">Evento - onselect</h3>
-    <p><strong>onselect</strong> -
-      <em>Executa-se quando um usuário realiza uma seleção de um elemento de um formulário.
-        Javascript 1.0</em>
-      Javascript 1.2
-    </p>
-   
-    <hr />
+        </fieldset>
+    </form>
 
-    
 
-    <script src="js/dom-eventos.js"></script>
-  </body>
+
+
+    <script src="js/dom-dados.js"></script>
+</body>
+
 </html>
