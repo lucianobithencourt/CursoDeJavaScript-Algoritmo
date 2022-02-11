@@ -10,199 +10,151 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Operadores II</title>
+    <title>DOM - Document Object Modle</title>
 </head>
 
 <body>
 
-    <h1>Operadores </h1>
+    <h1>DOM - Document Object Modle</h1>
+    <img src="https://miro.medium.com/max/1400/1*mMmuOhNytgqP7lrU9HPTpw.jpeg" alt="organogram-arvoreDOM" width="950">
 
-    <h2>Operadores-Relacionais</h2>
 
-
+    <h2> Exitem 5 formas de acesso elementos DOM</h2>
 
     <table>
 
-        <thead>
-            <tr>
-                <th>Operador</th>
-                <th>Operação</th>
-                <th>Exemplo</th>
-            </tr>
-        </thead>
+        <tr>
+            <th>Seletores-DOM</th>
+            <td>seleção por </td>
+        </tr>
 
-        <tbody>
-            <tr>
-                <td>&gt;</td>
-                <td>maior</td>
-                <td>a &gt; b</td>
+        <tr>
+            <td>document.getElementById('')</td>
+            <td>id</td>
+        </tr>
+        <tr>
+            <td>document.getElementsByClassName('')</td>
+            <td>class</td>
+        </tr>
 
-            </tr>
-            <tr>
-                <td>&lt;</td>
-                <td>menor</td>
-                <td>a &lt; b</td>
-            </tr>
-            <tr>
-                <td>&gt;= </td>
-                <td>maior igual que </td>
-                <td>a &gt;= b</td>
-            </tr>
-            <tr>
-                <td>&lt;= </td>
-                <td>menor igual que </td>
-                <td>a &lt;= b</td>
-            </tr>
-            <tr>
-                <td>==</td>
-                <td>igual</td>
-                <td> a == b </td>
-            </tr>
-            <tr>
-                <td>!=</td>
-                <td>diferente</td>
-                <td> a != b</td>
-            </tr>
-            <tr>
-                <td>===</td>
-                <td>valor&tipo</td>
-                <td> a === b</td>
-            </tr>
-        </tbody>
+        <tr>
+            <td>document.getElementsByName('')</td>
+            <td>name</td>
+        </tr>
+        <tr>
+            <td>document.getElementsByTagName('')</td>
+            <td>tag</td>
+        </tr>
+        <td>document.querySelector('')</td>
+        <td>'#id 'ou'.class'</td>
+
     </table>
-    <hr>
+
+    <h3>Selecionado via tagname - getElementsByTagName('tag')[posição]</h3>
 
     <pre>
         <code>
-            let a = 3
-            let b = 6
+            let element = document.getElementsByTagName('p')[0]
+            element.innerText=''
+            element.style.color='red'
+            element.style.fontSize='2em'
 
-            let maior = (a > b)
-            console.log(maior);
-            false
-            let menor = (a < b)
-            console.log(menor);
-            true
-            let maiorigual = (a >= b)
-            console.log(maiorigual);
-            false
-            let menorigual = (a <= b)
-            console.log(menorigual);
-            true
-            let igual = (a == b)
-            console.log(igual);
-            false
-            let diferente = (a != b)
-            console.log(diferente);
-            true
+            let element2 = document.getElementsByTagName('p')[1]
+            element2.innerText='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+
+            element2.style.color='purple';
         </code>
     </pre>
-    <hr>
-    <h2>Operadores-Lógicos && (AND)</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>P</th>
-                <th>Q</th>
-                <th>P && Q</th>
-            </tr>
+    <p>Acesso via tag name - document.getElementsByTagName('p')</p>
 
-            <tr>
-                <td>V</td>
-                <td>V</td>
-                <td>V</td>
-            </tr>
-            <tr>
-                <td>V</td>
-                <td>F</td>
-                <td>F</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>V</td>
-                <td>F</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>F</td>
-                <td>F</td>
-            </tr>
-            <span><mark>Os dois elementos tem que ser verdadeiros para  logica ser verdadeira</mark></span>
-        </thead>
-    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi perspiciatis, fugiat dolorem maxime a sit modi amet suscipit repellat consequuntur perferendis id tenetur optio quo laboriosam quidem vel blanditiis!</p>
 
     <hr>
+    <h3>Selecionado via id - document.getElementById('')</h3>
 
-    <h2>Operadores-Lógicos || (OR) </h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>P</th>
-                <th>Q</th>
-                <th>P || Q</th>
-            </tr>
-
-            <tr>
-                <td>V</td>
-                <td>V</td>
-                <td>V</td>
-            </tr>
-            <tr>
-                <td>V</td>
-                <td>F</td>
-                <td>V</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>V</td>
-                <td>V</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>F</td>
-                <td>F</td>
-            </tr>
-            <span><mark>Dos dois elementos apenas um pode ser verdadeiros para a logica ser verdadeira</mark></span>
-        </thead>
-    </table>
-    <hr>
-
-    <h1>Operador ! (NOT)</h1>
-    <table>
-        <tr>
-            <th>P</th>
-            <th>!P</th>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>F</td>
-        </tr>
-
-        
-    </table>
-
-    <h1>Ordem de precedencia</h1>
-    <figure>
-        <img  src="img/precedencia_.PNG" alt="imagemorderdeprecedencia">
-        <figcaption>Order de precedencia</figcaption>
-    </figure>
-
-    <hr>
-
-    <h1>Operador ternário ? : </h1>
-    <h2>teste-logico ? true : false </h2>
-
+    <p id="nome-id"> selecionado por id (nome-id) </p>
     <pre>
         <code>
-            let media = 3.0 > 6.0 ? "Aprovado" : "Reprovado" ;
-             console.log(media)
+            let element = document.getElementById('nome-id');
+            element.innerHTML='Acessado via getElementById';
         </code>
     </pre>
+    <hr>
+    <h3>Selecionado via class - document.getElementsByClassName('nome-class')[posicao]</h3>
 
 
-    <script src="js/operadoresII-javascript.js"></script>
+    <div class="classe">
+<hr>
+        <p>Pegando elemento pela classe[0] </p>
+    </div>
+    <pre>
+    <code>
+        let element = document.getElementsByClassName('classe')[0]
+
+        element.innerText='Alterando elemento da  posição[0]....';
+        element.style.color='navy';
+        element.style.fontWeight='bold';
+
+    </code>
+</pre>
+<hr>
+    <div class="classe">
+        <p>Pegando elemento pela classe[1] </p>
+    </div>
+ 
+    <pre>
+        <code>
+    let element2 = document.getElementsByClassName('classe')[1]
+
+    element2.innerText='Alterando elemento da  posição[1]....';
+    element2.style.color='purple';
+    element2.style.fontWeight='bold';
+        </code>
+    </pre>
+    <hr>
+    <div class="classe">
+        <p>Pegando elemento pela classe[2] </p>
+    </div>
+    <pre>
+        <code>
+        let element3 = document.getElementsByClassName('classe')[2]
+
+        element3.innerText='Alterando elemento da  posição[2]....';
+        element3.style.color='yellow';
+        element3.style.fontWeight='bold';
+        </code>
+    </pre>
+ <hr>
+ <h3>Selecionado via class - document.querySelector(#id-nome)</h3>
+
+ <p id="query">Selecionando  com querySelector('id#query')</p>
+ 
+ <pre>
+     <code>
+        let element4 = document.querySelector('p#query')
+
+        element4.innerHTML="A seleção segue sintaxe que se usa no css # para id's e  \'.\' para class";
+        element4.style.color='blue';
+        element4.style.fontWeight='bold';
+     </code>
+ </pre>
+
+ <hr>
+
+ <p class="class">Selecionando  com querySelector('p.class')</p>
+
+ <pre>
+     <code>
+        let element5 = document.querySelector('p.class')
+        element5.innerHTML="A seleção segue sintaxe que se usa no css # para id's e  \'.\' para class";
+        element5.style.color='blue';
+        element5.style.fontWeight='bold';
+     </code>
+ </pre>
+
+
+    <script src="js/dom.js"></script>
 </body>
 
 </html>
