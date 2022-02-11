@@ -10,34 +10,42 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Eventos-DOM-Dados</title>
+    <title>Condições-JavaScript</title>
 </head>
 
 <body>
-    <form action="#" method="get">
+    
+    <h1>Condição simples</h1>
 
-        <fieldset>
-            <legend>Calcular Valores</legend>
+<pre>
+    <code>
+    let velocidade = 71;
+    console.log(`A sua velocidade é de ${velocidade}`);
 
-            <label for="">
-      Valor1 : <input type="number" name="" id="valor1" placeholder="Digite Valor"> <br>
-      
-      Valor2 : <input type="number" name="" id="valor2" placeholder="Digite Valor"> <br>
+    if (velocidade >= 70) {
+    console.log(`A sua velocidade é de ${velocidade}  voce foi multado`);
 
-      <input type="button" value="Calcular"  onclick="calcular()" >
-      <input type="reset" value="Limpar Formulario">
+} // fim 
+    </code>
+</pre>
+<hr>
 
-    </label><br>
+<h1>Condição Composta</h1>
 
-            <p id="resposta-calculo">calculo</p>
+<pre>
+    <code>
+        let pais ='ingles'
 
-        </fieldset>
-    </form>
+        if (pais == 'brasil') {
+            console.log('Você é brasileiro');
+        } else {
+            console.log('Você é estrangeiro');
+        }
+    </code>
+</pre>
 
 
-
-
-    <script src="js/dom-dados.js"></script>
+    <script src="js/condicoes-if.js"></script>
 </body>
 
 </html>
