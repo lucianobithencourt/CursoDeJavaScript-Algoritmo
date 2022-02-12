@@ -1,5 +1,7 @@
 
 
+alert('Qual é sua nacionalidade ? ')
+
 let pais ='ingles'
 
 if (pais == 'brasil') {
@@ -9,3 +11,4 @@ if (pais == 'brasil') {
 }
 
 
+alert("oi")
