@@ -14,10 +14,10 @@ h1,h2,h3 {
 
 }
 
-.umclique:hover{
-    background-color: rgb(119, 0, 255);
-    color: rgb(250, 248, 248);
-    transition: 1s;
+#velocidade {
+
+    text-align: center;
+    width: 80px;
 }
 
 
