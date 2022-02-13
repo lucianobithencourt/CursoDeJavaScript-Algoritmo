@@ -31,3 +31,14 @@ footer {
     font-style: italic;
     margin-top: 8px;
 }
+
+div {
+
+    text-align: center;
+}
+
+#msg {
+
+    font-size: 2em;
+}
+
