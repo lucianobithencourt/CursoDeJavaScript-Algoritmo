@@ -9,20 +9,33 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 
-    <title>Hora do Dia</title>
+    <title>Verificador de Idade</title>
 </head>
-<body onload="carregar()" >
+<body>
 
     <header>
         <h1>Sua Idade</h1>
     </header>
     <section>
-        <div id="msg">Sua Idade</div>
+        <div>
+            <p>ano nascimento
+                <input type="number" name="txtname" id="txtano" min="0">
+            </p>
 
-        <div id="foto">
-            
-            <img id="imagem" src="img/loginperfil.png" alt="aqui tem uma imagem-intrativa"></div>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">
+                    Masculino
+                </label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar..." onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver  o resultado
 
+        </div>
     </section>
     <footer>&copy; Todods os direito reservados</footer>
     
