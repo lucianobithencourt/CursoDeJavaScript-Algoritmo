@@ -13,32 +13,12 @@ header {
 }
 
 
-section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: 0 auto;
-    box-shadow: 5px 5px 10px #00000088;
+h1 {
 
-}
-
-
-footer {
-
-    color: white;
+    border-radius: 50px;
     text-align: center;
-    font-style: italic;
-    margin-top: 8px;
+    padding: 8px;
+    color: purple;
+    border : 5px solid white
+
 }
-
-div {
-
-    text-align: center;
-}
-
-#msg {
-
-    font-size: 2em;
-}
-
