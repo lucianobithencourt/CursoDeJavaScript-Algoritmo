@@ -24,27 +24,28 @@ h1,h3 {
 }
 
 legend,fieldset {
-    
+    width: auto;
     border:5px white solid;
     padding: 8px;
     border-radius: 50px;
 }
 
 legend {
-
+    
     color:red;
     font-weight: bold;
     text-shadow: 1px 1px 10px white;
 }
 
 label,#contar { 
+    
     font-weight: bold;
     margin-left: 40px;
     cursor: pointer;
 }
 
 input{
-    width: 90px;
+    width: 120px;
     font-size: 1.1em;
     font-weight: bold;
     text-align:center;
@@ -52,7 +53,7 @@ input{
     border-radius: 8px;
 }
 
-#count-numbers {
+#tabuada {
     font-size: 1.3em;
     color: green;
     text-shadow: 1px 1px 10px white;
