@@ -15,10 +15,44 @@ header {
 
 h1,h3 {
 
-    border-radius: 50px;
+    
     text-align: center;
     padding: 8px;
     color: purple;
     border : 5px solid white
 
+}
+
+legend,fieldset {
+    
+    border:5px white solid;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+legend {
+
+    color:red;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px white;
+}
+
+label,#contar { 
+    font-weight: bold;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+input{
+    text-align:center;
+    padding:6px;
+    border-radius: 8px;
+}
+
+#count-numbers {
+
+    font-weight: bold;
+    position:relative;
+    left: 220px;
+    margin-bottom: 20px;
 }
