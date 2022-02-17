@@ -44,15 +44,55 @@ label,#contar {
 }
 
 input{
+    width: 90px;
+    font-size: 1.1em;
+    font-weight: bold;
     text-align:center;
     padding:6px;
     border-radius: 8px;
 }
 
 #count-numbers {
-
+    font-size: 1.3em;
+    color: green;
+    text-shadow: 1px 1px 10px white;
     font-weight: bold;
     position:relative;
-    left: 220px;
+    left: 370px;
+    top: 20px;
     margin-bottom: 20px;
+    width: 940px;
+    padding: 8px;
 }
+
+#inicio {
+    
+    color:blue;
+}
+
+#fim {
+    color: purple;
+}
+
+#passo {
+    color: green;
+}
+
+#inicio:hover {
+    background-color:rgba(143, 138, 138, 0.445);
+    cursor: pointer;
+
+}
+
+#fim:hover {
+    background-color:rgba(143, 138, 138, 0.445);
+    cursor: pointer;
+
+}
+
+#passo:hover {
+    background-color:rgba(143, 138, 138, 0.445);
+    cursor: pointer;
+
+}
+
