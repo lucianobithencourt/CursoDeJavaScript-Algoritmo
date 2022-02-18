@@ -10,44 +10,33 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Funcoes(){}</title>
+    <title>Funcoes Anonimas</title>
 </head>
 
 <body>
     
-    <h1>Funcoes () {} </h1>
+    <h1>Funcoes Anônimas</h1>
 
-    <pre>
-        <code>
-            function name(params) {
-    
-            }
-        </code>
-    </pre>
+    <p>
+        <h3>Expressão de função</h3>
+<p>Embora a declaração de função acima seja sintaticamente uma declaração, funções também podem ser criadas por uma expressão de função. Tal função pode ser anônima; ele não tem que ter um nome. Por exemplo, a função square poderia ter sido definida como:</p>
 
-    <hr>
+<pre>
+    <code>
+        var square = function(numero) {return numero * numero};
+        var x = square(4)
+    </code>
+</pre>
 
-    <pre>
-        <code>
-            function par_impar(vlr) {
+//x recebe o valor 16
+Copy to Clipboard
+<p>No entanto, um nome pode ser fornecido com uma expressão de função e pode ser utilizado no interior da função para se referir a si mesma, ou em um debugger para identificar a função em stack traces:</p>
+    </p>
 
-                let numero = Number(prompt("Digite um valor","Digite aqui"))
-            
-                if (numero %2 == 0 ) {
-                    console.log(`O numero ${numero} é um número par `);
-                    alert(`O numero ${numero} é par `);
-                } else {
-                     console.log(`O numero ${numero} é um número impar `);
-                     alert(`O numero ${numero} é impar `);
-                }
-                
-                return  vlr
-            }
-        </code>
-    </pre>
     
     
-    <script src="js/funcoes.js"></script>
+    
+    <script src="js/funcoes-anonimas.js"></script>
 </body>
 
 </html>
