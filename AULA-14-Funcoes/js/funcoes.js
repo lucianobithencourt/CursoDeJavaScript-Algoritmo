@@ -40,10 +40,10 @@ par_impar()
  */
 // -------------------------------------------------------
 
-let fat = Number(prompt("Digite um valor","Digite aqui"))
+let fat = 5
 
-for (let i = fat; i <1  ; i--) {
+for (let i = fat;  i >= 1  ; i--) {
 
-    console.log(fat);
+    console.log(i-1);
     
 }
