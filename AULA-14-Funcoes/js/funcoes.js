@@ -15,8 +15,10 @@
 
 // console.log(nome('felipe'));
 
+// -------------------------------------------------------
 
-function par_impar(vlr) {
+/**
+ * function par_impar(vlr) {
 
     let numero = Number(prompt("Digite um valor","Digite aqui"))
 
@@ -33,3 +35,15 @@ function par_impar(vlr) {
 
 // chamada da função
 par_impar()
+
+ * 
+ */
+// -------------------------------------------------------
+
+let fat = Number(prompt("Digite um valor","Digite aqui"))
+
+for (let i = fat; i <1  ; i--) {
+
+    console.log(fat);
+    
+}
