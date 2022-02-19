@@ -67,16 +67,11 @@
  * 
  */
 
- let num = [2,4,6,8,10,12,14,16,18,20]
+let listadecoisas = []
 
- let element = num.indexOf(14)
+listadecoisas['frutas']=['limao','laranja','pessego','maçã']
+listadecoisas['pessoas']=['luciano','luciana','vitor','felipe']
 
-
- if (element == -1) {
-    console.log(`[ERRO] O  valor não esta na array !`);
- } else {
-     
-     console.log(`o valor desejado esta na posição [${element}]`);
- }
- 
- 
+listadecoisas.frutas.sort()
+console.log(listadecoisas.frutas);
+console.log(listadecoisas.frutas[0]);
